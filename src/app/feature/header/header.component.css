@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    width: 30px;
+    height: auto;
+
+}
+
+.theme {
+    cursor: pointer;
+
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.log-btn {
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+    color: var(--text-primary);
+    border: 2px solid var(--text-primary);
+    transition: all 600ms ease;
+}
+
+
+.log-btn:hover,
+.log-btn:focus {
+    opacity: 0.75
+}
+
+.log-btn:active {
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+
+.right-section {
+    gap: 40px;
+}

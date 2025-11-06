@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Fake User",
+      "email": "fakeuser@email.com",
+      "password": "password123"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Example task",
+      "description": "This is an example task and not real",
+      "status": "to do",
+      "priority": "medium",
+      "dueDate": "2025-19-11"
+    }
+  ]
+}

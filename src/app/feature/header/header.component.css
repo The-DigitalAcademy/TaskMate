@@ -22,7 +22,7 @@
 
 .theme:active {
     opacity: 0.5;
-    transform: scale(0.95);
+    transform: scale(0.95) rotate(360deg);
 }
 
 .right-section {
@@ -46,7 +46,7 @@
 
 .log-btn:hover,
 .log-btn:focus {
-    opacity: 0.75
+    opacity: 0.75;
 }
 
 .log-btn:active {

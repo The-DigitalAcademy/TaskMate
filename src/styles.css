@@ -43,10 +43,30 @@ body {
 }
 
 body {
+  font-family: "Inter", sans-serif;
+  color: var(--text-primary);
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background: var(--bg-gradient);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  font-family: "Inter", sans-serif;
-  color: var(--text-primary);
+  z-index: -1;
+  filter: brightness(1);
+  animation: softGlow 6000ms ease-in-out infinite alternate;
+}
+
+@keyframes softGlow {
+  0% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(1.125);
+  }
 }

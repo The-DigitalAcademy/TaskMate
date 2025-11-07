@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+/* Reset styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Custom styles */
+
+/* Light theme */
+
+:root {
+  --bg-gradient: linear-gradient(
+    to bottom,
+    #f1c7ff 0%,
+    #f1d6ff 10%,
+    #b9d2fa 60%,
+    #c2e9fb 100%
+  );
+  --text-primary: #08000c;
+}
+
+/* Dark theme */
+
+.dark-theme {
+  --bg-gradient: linear-gradient(
+    to bottom,
+    #8120b5 0%,
+    #8c00ff 10%,
+    #008fe2 60%,
+    #7bb6c7 100%
+  );
+  --text-primary: #f5edff;
+}
+
+/* Body styles */
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: var(--bg-gradient);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  font-family: "Inter", sans-serif;
+  color: var(--text-primary);
+}

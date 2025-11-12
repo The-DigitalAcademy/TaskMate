@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AuthService } from 'src/app/auth/auth.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-register',
@@ -24,7 +24,11 @@ export class RegisterComponent {
 
   const formData = this.registerForm.value;
 
-  this.authService.register(formData.email!, formData.password!, formData.name!).subscribe({
+  this.authService.register({
+    email: formData.email!,
+    password: formData.password!,
+    name: formData.name!
+  }).subscribe({
     next: () => {
       alert('Registration successful!');
       this.router.navigate(['/homepage']);

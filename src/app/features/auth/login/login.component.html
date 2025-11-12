@@ -1,0 +1,35 @@
+<div class="login-container">
+  <div class="image-section">
+    <img src="assets/task.jpg" alt="Task illustration">
+  </div>
+
+
+  <div class="login-card">
+    <img src="https://cdn-icons-png.freepik.com/512/4661/4661334.png" alt="Auth0 Logo" class="logo">
+
+    <h2>Welcome</h2>
+    <p class="subtitle">Log in or sign up to continue</p>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <input type="email" placeholder="Email address" formControlName="email">
+        <div class="error" *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+          Valid email required!
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input type="password" placeholder="Password" formControlName="password">
+        <div class="error" *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+          Password must be at least 6 characters
+        </div>
+      </div>
+
+      <div *ngIf="loginError" class="login-error">{{ loginError }}</div>
+
+      <button type="submit" [disabled]="loginForm.invalid">Login</button>
+    </form>
+
+    <p class="signup">Don't have an account?  <a routerLink="/register">Sign up</a></p>
+  </div>
+</div>

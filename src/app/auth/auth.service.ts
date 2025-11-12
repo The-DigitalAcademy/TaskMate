@@ -3,10 +3,11 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 import { User } from '../models/user.model';
+import { environment } from 'src/environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
-  private API = 'http://localhost:3000/users';
+  private API = `${environment.apiUrl}/users`;
   constructor(private http: HttpClient) {}
 
   login(email: string, password: string): Observable<User> {

@@ -47,6 +47,12 @@
       "name": "Lebo",
       "email": "lebo@yahoo.com",
       "password": "Password123"
+    },
+    {
+      "id": "2023",
+      "name": "Katleho",
+      "email": "kat@gmail.com",
+      "password": "kat123"
     }
   ],
   "tasks": [

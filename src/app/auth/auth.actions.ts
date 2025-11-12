@@ -9,4 +9,4 @@ export const register = createAction('[Auth] Register', props<{ email: string; p
 export const registerSuccess = createAction('[Auth] Register Success', props<{ user: User }>());
 export const registerFailure = createAction('[Auth] Register Failure', props<{ error: string }>());
 
-export const logout = createAction('[Auth] Logout');
+export const logout = createAction('[Auth] Logout');l

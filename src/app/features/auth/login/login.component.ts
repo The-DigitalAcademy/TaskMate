@@ -29,7 +29,7 @@ loginError: any;
       this.authService.login(email, password).subscribe({
         next: (user) => {
           alert('Logged in  successful!');
-          if (user) this.router.navigate(['/']);
+          if (user) this.router.navigate(['/homepage']);
         },
        error: (err) => {
       this.loginError = err.message || 'Login failed,Please check your credentials';

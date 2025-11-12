@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './feature/header/header.component';
 import { FiltersComponent } from './filters/filters.component';
+import { HomepageComponent } from './component/homepage/homepage.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { FiltersComponent } from './filters/filters.component';
     TaskManagementComponent,
     LoginComponent,
     RegisterComponent,
+    HomepageComponent,
   
 
   ],

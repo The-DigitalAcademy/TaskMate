@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Fake User",
+      "email": "fakeuser@email.com",
+      "password": "password123"
+    },
+    {
+      "id": "0c07",
+      "name": "Thapelo",
+      "email": "thapelo@email.com",
+      "password": "tap123"
+    },
+    {
+      "id": "e9f6",
+      "name": "Lebo",
+      "email": "lebo@gmail.com",
+      "password": "lebo123"
+    },
+    {
+      "id": "eea7",
+      "name": "tawanda",
+      "email": "tawanda@email.com",
+      "password": "tawa123"
+    },
+    {
+      "id": "fadb",
+      "name": "Lilly",
+      "email": "lilly@ceo.co.za",
+      "password": "lee123"
+    },
+    {
+      "id": "396c",
+      "name": "Thabiso",
+      "email": "thabiso@gmail.com",
+      "password": "Tee123"
+    },
+    {
+      "id": "d149",
+      "name": "Lee",
+      "email": "lee@yahoo123",
+      "password": "lee123"
+    },
+    {
+      "id": "2313",
+      "name": "Lebo",
+      "email": "lebo@yahoo.com",
+      "password": "Password123"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Example task",
+      "description": "This is an example task and not real",
+      "status": "to do",
+      "priority": "medium",
+      "dueDate": "2025-19-11"
+    }
+  ]
+}

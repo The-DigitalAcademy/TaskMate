@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
+import { User } from '../models/user.model';
+import { Task } from '../models/task.model';
 
 @Injectable({
   // Service available in the whole app
@@ -20,18 +22,18 @@ export class ApiService {
   = = = = = = = = = = */
 
   // Get all users
-  getUsers(): Observable<any> {
-    return this.http.get(`${this.baseUrl}/users`); // GET request to /users
+  getUsers(): Observable<User[]> {
+    return this.http.get<User[]>(`${this.baseUrl}/users`); // GET request to /users
   }
 
   // Add a new user
-  registerUser(user: any): Observable<any> {
-    return this.http.post(`${this.baseUrl}/users`, user); // POST request to /users
+  registerUser(user: User): Observable<User>  {
+    return this.http.post<User>(`${this.baseUrl}/users`, user); // POST request to /users
   }
 
   // Login user with email and password
-  loginUser(email: string, password: string): Observable<any> {
-    return this.http.get(`${this.baseUrl}/users?email=${email}&password=${password}`); // GET with filters 
+  loginUser(email: string, password: string): Observable<User[]> {
+    return this.http.get<User[]>(`${this.baseUrl}/users?email=${email}&password=${password}`); // GET with filters 
   }
 
   /* = = = = = = = = = = 
@@ -39,22 +41,22 @@ export class ApiService {
   = = = = = = = = = = */
 
   // Get all tasks
-  getTasks(): Observable<any> {
-    return this.http.get(`${this.baseUrl}/tasks`); // GET request to /tasks
+  getTasks(): Observable<Task[]> {
+    return this.http.get<Task[]>(`${this.baseUrl}/tasks`); // GET request to /tasks
   }
 
   // Add a new task
-  addTask(task: any): Observable<any> {
-    return this.http.post(`${this.baseUrl}/tasks`,task); // POST request to /tasks
+  addTask(task: Task): Observable<Task> {
+    return this.http.post<Task>(`${this.baseUrl}/tasks`,task); // POST request to /tasks
   }
 
   // Update a task with ID
-  updateTask(id: number, task: any): Observable<any> {
-    return this.http.patch(`${this.baseUrl}/tasks/${id}`, task); // PATCH request to /tasks/id
-  }
+  updateTask(id: number, task: Partial<Task>): Observable<Task> {
+    return this.http.patch<Task>(`${this.baseUrl}/tasks/${id}`, task); // PATCH request to /tasks/id
+  } // Partial<Task> to only update fields that changed
 
   // Delete a task by ID
-  deleteTask(id: number): Observable<any> {
-    return this.http.delete(`${this.baseUrl}/tasks/${id}`); // DELETE request to /tasks/id
+  deleteTask(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.baseUrl}/tasks/${id}`); // DELETE request to /tasks/id
   }
 }

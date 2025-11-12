@@ -65,6 +65,13 @@
       "name": "Thabie",
       "email": "thab123@gmail.com",
       "password": "thab123"
+    },
+    {
+      "id": "ebeb",
+      "email": "thab1bhb23@gmail.com",
+      "password": "thab123",
+      "name": "jbnm",
+      "token": "fake-token"
     }
   ],
   "tasks": [

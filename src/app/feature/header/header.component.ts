@@ -10,7 +10,11 @@ export class HeaderComponent implements OnInit {
   authService = inject(AuthService);
   // Set to light mode by default
   isDarkMode = false;
+
+name: any;
+
 user: any;
+
 
   ngOnInit(): void {
     // Load saved localStorage preference

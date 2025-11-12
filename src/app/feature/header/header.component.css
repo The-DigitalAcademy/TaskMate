@@ -8,12 +8,21 @@
 .logo {
     width: 30px;
     height: auto;
-
 }
 
 .theme {
     cursor: pointer;
+    transition: all 300ms ease;
+}
 
+.theme:hover,
+.theme:focus {
+    opacity: 0.75
+}
+
+.theme:active {
+    opacity: 0.5;
+    transform: scale(0.95) rotate(360deg);
 }
 
 .right-section {
@@ -31,18 +40,18 @@
     background: none;
     color: var(--text-primary);
     border: 2px solid var(--text-primary);
-    transition: all 600ms ease;
+    transition: all 300ms ease;
 }
 
 
 .log-btn:hover,
 .log-btn:focus {
-    opacity: 0.75
+    opacity: 0.75;
 }
 
 .log-btn:active {
     opacity: 0.5;
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .right-section {

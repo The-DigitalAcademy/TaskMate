@@ -36,17 +36,11 @@
 
 /* Body styles */
 
-html,
-body {
-  height: 100%;
-  overflow: hidden;
-}
 
 body {
   font-family: "Inter", sans-serif;
   color: var(--text-primary);
-  height: 100%;
-  overflow: hidden;
+  min-height: 100vh;
   position: relative;
 }
 

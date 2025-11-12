@@ -16,20 +16,25 @@ input, textarea {
   margin-bottom: 10px;
   font-size: 16px;
   border-radius: 10px;
-  border: 1px solid lightgrey;
+  border: 1px solid black;
 
 }
 
 button {
   padding: 10px;
-  font-size: 16px;
+  font-size: 25px;
+  font-weight: bold;
   cursor: pointer;
   border-radius: 10px;
-  border: 1px solid grey;
+  background-color: rgb(229, 140, 229);
+  border: 5px solid  rgb(229, 140, 229);
+  color: white;
 }
 
 button:hover {
-    background-color: lightgray;
+    background-color:  rgb(104, 184, 237);
+       border: 5px solid rgb(104, 184, 237) ;
+
 }
 
 .task-list {
@@ -39,9 +44,14 @@ button:hover {
 }
 
 .task-card {
-  border: 1px solid #ccc;
+  border: none;
+  margin-top: 20px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+    background:rgba(255, 255, 255, 0.2);
+    color: black;
+  
+
 }
 
 .task-card h3 {
@@ -50,4 +60,22 @@ button:hover {
 
 .task-card button {
   margin-right: 10px;
+}
+.create-info{
+  background:rgba(255, 255, 255, 0.2);
+padding: 20px 30px;
+margin-left: 10px;
+margin-right: 10px;
+border-radius: 15px;
+
+}
+.head{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.task-card-button{
+
+  font-size: 12px;
+
 }

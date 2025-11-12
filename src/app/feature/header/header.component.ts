@@ -19,7 +19,7 @@ user: any;
   ngOnInit(): void {
     // Load saved localStorage preference
     const theme = localStorage.getItem('theme');
-   this.authService.currentUser$.subscribe(u => this.user = u);
+    this.authService.currentUser$.subscribe(u => this.user = u);
     // If dark saved enable dark mode
     if (theme === 'dark') {
       this.isDarkMode = true;

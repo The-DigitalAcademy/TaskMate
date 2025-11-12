@@ -28,8 +28,8 @@ loginError: any;
       const { email, password } = this.loginForm.value;
       this.authService.login(email, password).subscribe({
         next: (user) => {
-          alert('Registration successful!');
-          if (user) this.router.navigate(['/dashboard']);
+          alert('Logged in  successful!');
+          if (user) this.router.navigate(['/']);
         },
        error: (err) => {
       this.loginError = err.message || 'Login failed,Please check your credentials';

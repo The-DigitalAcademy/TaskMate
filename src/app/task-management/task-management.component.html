@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Task Manager</h1>
+
+  <form [formGroup]="taskForm" (ngSubmit)="submitTask()">
+    <input formControlName="title" placeholder="Task Title" />
+    <textarea formControlName="description" placeholder="Task Description"></textarea>
+    <button type="submit">{{ editMode ? 'Update Task' : 'Add Task' }}</button>
+  </form>
+
+  <div class="task-list">
+    <div class="task-card" *ngFor="let task of tasks">
+      <h3>{{ task.title }}</h3>
+      <p>{{ task.description }}</p>
+      <button (click)="editTask(task)">Edit</button>
+      <button (click)="deleteTask(task.id)">Delete</button>
+    </div>
+  </div>
+</div>

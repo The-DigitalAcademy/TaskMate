@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header" *ngIf="authService.isLoggedIn()">
   <div class="pic">
     <img 
       class="logo" 
@@ -10,8 +10,14 @@
   </div>
 
   <div class="right-section">
+
     <p class="welcome-message">Welcome {{ name }}</p>
     <button routerLink="/login"  class="log-btn">Log Out</button>
+
+  <p *ngIf="user">Welcome, {{ user.name }}!</p>
+
+    <button class="log-btn">Log Out</button>
+
     <img 
       class="theme" 
       [src]=" isDarkMode ? 
@@ -21,4 +27,5 @@
       (click)="toggleTheme()">
   </div>
 </div>
+
 

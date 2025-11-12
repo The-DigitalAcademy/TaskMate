@@ -4,6 +4,17 @@ import { TaskManagementComponent } from './task-management/task-management.compo
 
 const routes: Routes = [
   {path: 'task-management' , component: TaskManagementComponent}
+
+import { LoginComponent } from './features/auth/login/login.component';
+import { RegisterComponent } from './features/auth/register/register.component';
+
+const routes: Routes = [
+  {path: '', redirectTo:'', pathMatch: 'full'},
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent},
+ 
+  
+
 ];
 
 @NgModule({

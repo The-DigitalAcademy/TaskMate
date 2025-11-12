@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -6,14 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
+  authService = inject(AuthService);
   // Set to light mode by default
   isDarkMode = false;
+
 name: any;
+
+user: any;
+
 
   ngOnInit(): void {
     // Load saved localStorage preference
     const theme = localStorage.getItem('theme');
-
+   this.authService.currentUser$.subscribe(u => this.user = u);
     // If dark saved enable dark mode
     if (theme === 'dark') {
       this.isDarkMode = true;

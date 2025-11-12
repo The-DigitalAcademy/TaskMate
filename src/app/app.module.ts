@@ -19,9 +19,8 @@ import { FiltersComponent } from './filters/filters.component';
     FiltersComponent,
     TaskManagementComponent,
     LoginComponent,
-    RegisterComponent
-   
-
+    RegisterComponent,
+  
 
   ],
   imports: [

@@ -9,15 +9,19 @@ import { AuthRoutingModule } from './features/auth-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './feature/header/header.component';
+import { FiltersComponent } from './filters/filters.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    FiltersComponent,
     TaskManagementComponent,
     LoginComponent,
-    RegisterComponent,
-    HeaderComponent
+    RegisterComponent
+   
+
 
   ],
   imports: [

@@ -9,13 +9,16 @@
       width="70px">
   </div>
 
-    <div class="right-section">
-        <p class="welcome-message">Welcome {{ name }}!</p>
-
-
-
-        <button class="log-btn">Log Out</button>
-        <img class="theme" src="../../../assets/light-mode-icon.svg" alt="theme icon">
-    </div>
-
+  <div class="right-section">
+    <p class="welcome-message">Welcome {{ name }}</p>
+    <button routerLink="/login"  class="log-btn">Log Out</button>
+    <img 
+      class="theme" 
+      [src]=" isDarkMode ? 
+        '../../../assets/light-mode-icon.svg' : 
+        '../../../assets/dark-mode-icon.svg' " 
+      alt="theme icon" 
+      (click)="toggleTheme()">
+  </div>
+</div>
 

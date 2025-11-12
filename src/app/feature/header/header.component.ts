@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   // Set to light mode by default
   isDarkMode = false;
+name: any;
 
   ngOnInit(): void {
     // Load saved localStorage preference

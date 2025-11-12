@@ -28,7 +28,7 @@ export class AuthService {
       // create user in db.json
       switchMap(() => this.http.post<any>(this.apiUrl, userData)),
       tap(newUser => {
-        // optionally log in automatically:
+        // log in automatically:
         localStorage.setItem('user', JSON.stringify(newUser));
         this.currentUserSubject.next(newUser);
       })

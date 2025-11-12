@@ -13,7 +13,7 @@ import { HeaderComponent } from './feature/header/header.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
     HeaderComponent
   ],
   imports: [

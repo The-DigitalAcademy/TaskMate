@@ -53,6 +53,12 @@
       "name": "Katleho",
       "email": "kat@gmail.com",
       "password": "kat123"
+    },
+    {
+      "id": "5494",
+      "name": "michael",
+      "email": "michael@email.com",
+      "password": "password12345"
     }
   ],
   "tasks": [

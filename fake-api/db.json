@@ -59,6 +59,12 @@
       "name": "michael",
       "email": "michael@email.com",
       "password": "password12345"
+    },
+    {
+      "id": "e459",
+      "name": "Bonga",
+      "email": "bonga@gmail.com",
+      "password": "password12345pass123"
     }
   ],
   "tasks": [

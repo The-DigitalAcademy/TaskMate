@@ -161,3 +161,36 @@ gap: 10px;
   color:white;
   font-weight: bold;
 }
+.search-input {
+  display: flex;
+  width: 100%;  
+  gap: 8px;         
+  margin: 1rem auto;
+  border: 1px solid #ccc; 
+  border-radius: 6px;
+  overflow: hidden;        
+}
+
+.search-input input,
+.search-input .search-btn {
+  flex: 1;                
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+.search-input .search-btn {
+  background-color:  #c08cff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  height: 100%;
+  max-width: 120px;
+}
+
+.search-input .search-btn:hover {
+  background-color:   rgb(104, 184, 237);
+  color: white;
+}
+

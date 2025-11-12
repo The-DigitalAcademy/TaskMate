@@ -49,22 +49,18 @@
       "password": "Password123"
     },
     {
+
+      "id": "124c",
+      "name": "lillian",
+      "email": "lilly@gmail.com",
+      "password": "lil123"
+    },
+    {
       "id": "2023",
       "name": "Katleho",
       "email": "kat@gmail.com",
       "password": "kat123"
-    },
-    {
-      "id": "5494",
-      "name": "michael",
-      "email": "michael@email.com",
-      "password": "password12345"
-    },
-    {
-      "id": "e459",
-      "name": "Bonga",
-      "email": "bonga@gmail.com",
-      "password": "password12345pass123"
+
     }
   ],
   "tasks": [

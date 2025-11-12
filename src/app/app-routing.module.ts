@@ -1,5 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { TaskManagementComponent } from './task-management/task-management.component';
+
+const routes: Routes = [
+  {path: 'task-management' , component: TaskManagementComponent}
+
 import { LoginComponent } from './features/auth/login/login.component';
 import { RegisterComponent } from './features/auth/register/register.component';
 
@@ -9,7 +14,7 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent},
  
   
-  
+
 ];
 
 @NgModule({
